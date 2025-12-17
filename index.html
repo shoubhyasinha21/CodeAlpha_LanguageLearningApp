@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Language Learning App</h1>
+        <div class="category">
+            <button onclick="showFlashcards()">Vocabulary</button>
+            <button onclick="showQuiz()">Quiz</button>
+        </div>
+        <div id="flashcard-container" class="hidden">
+            <h2>Flashcard</h2>
+            <div id="flashcard">
+                <p id="word"></p>
+                <p id="translation"></p>
+            </div>
+            <button id="next-btn">Next</button>
+        </div>
+        <div id="quiz-container" class="hidden">
+            <h2>Quiz</h2>
+            <p id="quiz-question"></p>
+            <div id="quiz-options"></div>
+            <button id="next-quiz-btn">Next Question</button>
+        </div>
+    </div>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
